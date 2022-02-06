@@ -1,0 +1,24 @@
+---
+---
+
+/*
+  If the number of TAB files has changed, the following variable is required.
+  And it must be defined before `@import`.
+*/
+$tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
+
+@import "{{ site.theme }}";
+
+@import url('https:///fonts.googleapis.com/css2?family=Newsreader&display=swap');
+
+html * {
+  font-family: 'Newsreader', serif;
+}
+
+blockquote > p {
+  font-size:  1.6rem !important;
+}
+
+.post-content > p  {
+  font-size:  1.5rem !important;
+}

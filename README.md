@@ -35,6 +35,14 @@ $ bundle
 
 Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
 
+## Development
+```bash
+docker run -it --rm \
+    --volume="$PWD:/srv/jekyll" \
+    -p 4000:4000 -p 35729:35729 jekyll/jekyll \
+    jekyll serve --incremental --livereload
+```
+
 ## License
 
 This work is published under [MIT][mit] License.
