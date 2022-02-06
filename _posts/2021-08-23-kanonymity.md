@@ -53,7 +53,7 @@ _Figure 3.: Example of a lattice of two attributes E and Z._
 
 ## Final Remarks
 
-I won't go into any more details on k-anonymity for now, but I hope this introduction left you interested in the topic. For more information I would suggest you have a look at the original paper which explains all these ideas in greater detail. I would also like to leave you with an additional post published by [Troy Hunt](www.troyhunt.com) which presents a practical use case for k-anonymity. While it tackles a slightly different problem, it's a really interesting application of a public service to identify compromised login credentials without disclosing compromising it's users privacy.
+I won't go into any more details on k-anonymity for now, but I hope this introduction left you interested in the topic. For more information I would suggest you have a look at the original paper which explains all these ideas in greater detail. I would also like to leave you with an additional post published by [Troy Hunt](https://www.troyhunt.com) which presents a practical use case for k-anonymity. While it tackles a slightly different problem, it's a really interesting application of a public service to identify compromised login credentials without disclosing compromising it's users privacy.
 
 
 ## References
