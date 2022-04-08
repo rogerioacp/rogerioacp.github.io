@@ -1,7 +1,7 @@
 ---
 title: About
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
 I’m a professional security engineer with a strong academic background on cryptography and privacy.  As a security engineer, I manage and minimize security vulnerabilities by applying the most effective state of the art solutions. I use my extensive experience in academic research to be a step ahead of security threats and design novel systems that address hard security challenges.
