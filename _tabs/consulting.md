@@ -4,8 +4,10 @@ icon: fas fa-handshake
 order: 1
 ---
 
-I provide consulting services on Confidential Computing, Cloud Security and Security Software Development. Reach out to me for a free consultation and find out how I can help your company be more secure.
+I provide consulting services on Confidential Computing, Cloud Security and Data Protection Engineering. [Contact me](mailto:rogerio.a.pontes@outlook.com) for a free consultation and together we can improve your system's security.
 
+
+<!--
 Another service:
 
 * Making sure companies are compliant with IT Security Act (ITSiG) has been in effect since 25/07/2015 
@@ -15,23 +17,46 @@ https://www.teletrust.de/fileadmin/user_upload/2021-09_TeleTrusT_Guideline_State
 Operators of critical infrastructures, pursuant to Section 8a(1) of the BSI Act, shall keep a minimum level of IT security corresponding to the “state of the art". They are also obligated to report certain IT security incidents to the BSI.
 
 
-The regulation governs the classification of companies as critical infrastruc- tures in the energy, water, food, information technology and telecommunications sectors (basket 1) and the health, finance and transportation and traffic sectors (basket 2).
-
-
-## Confidential Computing
-
-Confidential computing is the next step in the process of protecting your company data in a cloud environment. Protecting data with encryption at rest and in transit with secure communication channels is essential but not enough. Data should also be protected in use, when it's loaded into memory to be processed by your applications and services. Confidential computing is a set of emerging technologies that can address this gap in modern cloud architectures. It reduces the risk of data exfiltration due to a compromised infrastructure or a malicious operator by keeping the data always encrypted, even when it's being used for computation. This technology enables the deployment of confidential applications that handle sensitive data in public clouds such as:
-
-* Public Services (e.g.: Digital Identity, Public services)
-* Financial Services (e.g.: Digital Currency, Fraud Prevention)
-* Healthcare (e.g.: Disease Diagnostic, Drug Development)
-
+The regulation governs the classification of companies as critical infrastructures in the energy, water, food, information technology and telecommunications sectors (basket 1) and the health, finance and transportation and traffic sectors (basket 2).
+-->
 
 ## Cloud Security
 
-The security of a cloud environment is based on the shared-responsibility model, where the cloud provider will guarantee the security of their infrastructure but you, the application owner, are still responsible for protecting the security of your applications and correctly use the cloud infrastructure. However, companies often fail to adequately design, deploy and maintain a secure cloud architecture, resulting in easily exploitable vulnerabilities that may result in large-scale security incidents. This can be prevented by systematically implementing security best-practices on access controls, network segmentation and restriction, endpoint security, credential management, and much more. I can help you bring your cloud system to a high-security standard with an internal audit. Together we can crate an actionable roadmap to resolve any existing vulnerability.
+Keeping a cloud infrastructure secure is hard. A single miss-configured product can result in easily exploitable vulnerabilities that escalate to large-scale security incidents. This risk can be decreased by systematically implementing security best-practices on access controls, network segmentation, endpoint security, credential management, and much more. I can help you identify critical security vulnerabilities and bring your cloud environment to a high-security standard with an internal audit. Together, we can create an actionable roadmap to resolve existing vulnerabilities and setup an infrastructure to continuously monitor your cloud deployment for vulnerabilities.
 
-## Privacy Engineering / Privacy-Aware Systems / Privacy By Design
+## Confidential Computing
+
+Confidential computing is the next step in the process of protecting your company data in a cloud environment. 
+It's a set of emerging technologies that reduce the risk of data exfiltration due to a compromised infrastructure or a malicious operator.  With confidential computing, data can remain encrypted at all times. Not only at rest or during transit, but also when it's being used for computation by your applications and services. This technology enables products with critical data in healthcare, financial services and public services to take full advantage of public clouds with a lower security risk. However, using confidential computing requires expert knowledge to select and setup the best solution in the state-of-the-art. I can help you to start using confidential computing in your systems with my experience on deploying large-scale applications in confidential computing environments.
+
+
+## Data Protection Engineering
+
+Complying with modern privacy requirements, such as GDPR, requires going beyond just protecting your security perimeter. Companies should now have data protection by design and by default as a core privacy requirement for digital services that handle PII data. The goal of this requirement is to protect the user's privacy and prevent it from being abused. It also has the side-effect, if correctly implemented, of securing your companies data and secrets and as such protecting your competitive edge. However, it can not be satisfied by simply following a checklist of principles or technologies. It requires an innovative data protection engineering process that deploys technical and organization measures that will protect data throughout its entire lifecycle. To meet the highest privacy requirements, companies should develop privacy-preserving systems that leverage state-of-the-art privacy techniques. I can guide you trough the state-of-the-art systems and help you deploy the best solution for your use-case, technological stack and data ecosystem.
+<!--
+* Anonymization schemes (K-anonymity, differential privacy)
+* Privacy Enhancing techniques (Trusted Execution environments, Searchable Encryption, multi-party computation,)
+* Privacy Preserving Storage (Privacy Preserving Databases, Oblivious Storage)
+-->
+
+<!--
+Privacy Enhancing Technologies (PETS) / Privacy Engineering / Privacy-Aware Systems / Privacy By Design
+
+Privacy by design is neither just a list of principles nor can it be reduced to the implementation of specific technologies. In fact, it is a process involving various technological and organizational components, which implement privacy and data protection principles by properly and timely deploying technical and organization measures that include also PETS.
+
+
+Privacy Enhancing Technologies (PETs) cover the broader range of technologies that are designed to support implementation of data protection principles at a systemic and fundamental level. As described in [7], PETs are “a coherent system of ICT measures that protects privacy by eliminating or reducing personal data or by preventing unnecessary and/or undesired processing of personal data, all without losing the functionality of the information system”. PETS, as technical solutions, can be perceived as building blocks towards meeting data protection principles and the obligations under GDPR Art. 25 on data protection by design. Therefore, they also comprise elements of the building blocks of data protection engineering.
+
+
+As it has been stressed also in past ENISA’s reports, a number of technologies and techniques already exists but it is not straightforward for data controllers and data processors which one is applicable and better suited for each processing operation and for each context. More importantly it is not clear of how each technique should be engineered seamlessly into the processing operation practise in order to truly unfold their potentials and support achieving data protection principles.
+
+
+Initiatives aimed to support engineers, such as the Internet Privacy Engineering Network (IPEN)24, should be further supported by practitioners, researchers and academia.
+https://edps.europa.eu/data-protection/ipen-internet-privacy-engineering-network_en
+
+https://ipen.trialog.com/wiki/Wiki_for_Privacy_Standards
+
+
 
 Secure software development: Other causes are keys or passwords built
 into the code, incorrect handling of sensitive data or insecure error handling that provides the attacker
@@ -153,7 +178,7 @@ security concepts for specialists and managers.
 and establishes the commitment of the highest management level to continuously improve the ISMS.
 This is essential, as the overall responsibility for information security always remains with the highest
 management level. The guideline must be communicated to all employees in the area of application.
-
+-->
 
 <!--
 
