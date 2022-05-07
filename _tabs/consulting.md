@@ -4,7 +4,7 @@ icon: fas fa-handshake
 order: 1
 ---
 
-I provide consulting services on Confidential Computing, Cloud Security and Data Protection Engineering. [Contact me](mailto:rogerio.a.pontes@outlook.com) for a free consultation and together we can improve your system's security.
+I provide consulting services on Cloud Security, Confidential Computing, and Data Protection Engineering. [Contact me](mailto:rogerio.a.pontes@outlook.com) for a free consultation and together we can improve your system's security.
 
 
 <!--
@@ -22,16 +22,15 @@ The regulation governs the classification of companies as critical infrastructur
 
 ## Cloud Security
 
-Keeping a cloud infrastructure secure is hard. A single miss-configured product can result in easily exploitable vulnerabilities that escalate to large-scale security incidents. This risk can be decreased by systematically implementing security best-practices on access controls, network segmentation, endpoint security, credential management, and much more. I can help you identify critical security vulnerabilities and bring your cloud environment to a high-security standard with an internal audit. Together, we can create an actionable roadmap to resolve existing vulnerabilities and setup an infrastructure to continuously monitor your cloud deployment for vulnerabilities.
+Managing the security a cloud infrastructure is hard. A single miss-configured product can result in easily exploitable vulnerabilities that can grow into large-scale security incidents. This can be avoided by actively monitoring cloud resources for vulnerabilities in access controls, networks, API endpoints, credential management, and much more. With an internal security audit, I can help you identify these vulnerabilities in your infrastructure and present an actionable roadmap to bring your environment to a high security standard.
 
 ## Confidential Computing
 
-Confidential computing is the next step in the process of protecting your company data in a cloud environment. It's a set of emerging technologies that reduce the risk of data exfiltration due to a compromised infrastructure or a malicious operator. With confidential computing, data can always remain encrypted, at rest, during transit and when it's used for computation by your applications. However, using confidential computing requires expert knowledge as there are several solutions in the market, each with different performance and security trade-offs. I can find the best fit for your use-case and help you start using confidential computing with my experience on deploying large-scale applications in confidential computing environments.
-
+Confidential computing is the next step of protecting your company data. It's a set of emerging technologies that reduce the risk of data exfiltration due to a compromised infrastructure or a malicious operator. With confidential computing, data can always remain encrypted, at rest, during transit and even when it's used for computation by your applications. However, using confidential computing requires expert knowledge as there are several solutions, each with different performance and security trade-offs. I can find the best fit for your use-case and help you start using confidential computing on your products.
 
 ## Data Protection Engineering
 
-Complying with modern privacy requirements, such as GDPR, requires going beyond just protecting your security perimeter. Companies that handle PII data must satisfy the requirement of data protection by design and by default. But this requirement can not be satisfied by simply following a checklist of principles or technologies. It requires an innovative data protection engineering process that deploys technical and organization measures that protect data throughout its entire lifecycle. To meet the highest privacy requirements, companies should develop privacy-preserving systems that leverage state-of-the-art privacy techniques. I can guide you through existing systems and help you select, configure, and deploy the best solution for your company.
+Complying with modern privacy requirements, such as GDPR, requires going beyond just protecting your security perimeter. Companies that handle PII data must follow the principle of data protection by design and by default. This requires the implementation of an innovative data protection engineering process that deploys state-of-the-art privacy-preserving systems and organizational measures to protect data throughout its complete lifecycle. I can guide you through existing systems and help you select, configure, and deploy the best solution for your company.
 
 <!--
 * Anonymization schemes (K-anonymity, differential privacy)
