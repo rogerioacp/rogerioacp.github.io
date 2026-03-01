@@ -1,60 +1,67 @@
 ---
 import '@fontsource-variable/inter';
-
-// 'DM Sans'
-// Nunito
-// Dosis
-// Outfit
-// Roboto
-// Literata
-// 'IBM Plex Sans'
-// Karla
-// Poppins
-// 'Fira Sans'
-// 'Libre Franklin'
-// Inconsolata
-// Raleway
-// Oswald
-// 'Space Grotesk'
-// Urbanist
+import '@fontsource-variable/plus-jakarta-sans';
 ---
 
 <style is:inline is:global>
   :root {
     --aw-font-sans: 'Inter Variable';
     --aw-font-serif: var(--aw-font-sans);
-    --aw-font-heading: var(--aw-font-sans);
+    --aw-font-heading: 'Plus Jakarta Sans Variable';
 
-    --aw-color-primary: rgb(30 64 175);
-    --aw-color-secondary: rgb(30 58 138);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: rgb(79 70 229);
+    --aw-color-secondary: rgb(67 56 202);
+    --aw-color-accent: rgb(16 185 129);
 
-    --aw-color-text-heading: rgb(0 0 0); 
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
+    --aw-color-text-heading: rgb(15 23 42);
+    --aw-color-text-default: rgb(51 65 85);
+    --aw-color-text-muted: rgb(100 116 139);
     --aw-color-bg-page: rgb(255 255 255);
 
-    --aw-color-bg-page-dark: rgb(3 6 32);
+    --aw-color-bg-page-dark: rgb(15 23 42);
 
-    ::selection {background-color: lavender;}
-
+    ::selection {
+      background-color: rgb(199 210 254);
+      color: rgb(30 27 75);
+    }
   }
 
   .dark {
     --aw-font-sans: 'Inter Variable';
     --aw-font-serif: var(--aw-font-sans);
-    --aw-font-heading: var(--aw-font-sans);
+    --aw-font-heading: 'Plus Jakarta Sans Variable';
 
-    --aw-color-primary: rgb(30 64 175);
-    --aw-color-secondary: rgb(30 58 138);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: rgb(129 140 248);
+    --aw-color-secondary: rgb(99 102 241);
+    --aw-color-accent: rgb(52 211 153);
 
-    --aw-color-text-heading: rgb(0 0 0); 
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
+    --aw-color-text-heading: rgb(241 245 249);
+    --aw-color-text-default: rgb(203 213 225);
+    --aw-color-text-muted: rgb(148 163 184);
     --aw-color-bg-page: var(--aw-color-bg-page-dark);
 
-    ::selection {background-color: black; color: snow}
+    ::selection {
+      background-color: rgb(67 56 202);
+      color: rgb(241 245 249);
+    }
+  }
 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  [data-animate] {
+    opacity: 0;
+  }
+
+  [data-animate].is-visible {
+    animation: fadeInUp 0.6s ease-out forwards;
   }
 </style>

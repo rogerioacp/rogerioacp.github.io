@@ -1,6 +1,6 @@
 {
-  "name": "@onwidget/astrowind",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
+  "name": "rogerio-pontes-website",
+  "description": "Personal website of Rogério Pontes — Security Engineer & Privacy Researcher.",
   "version": "1.0.0-beta.17",
   "private": true,
   "scripts": {
@@ -13,23 +13,17 @@
     "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.4",
     "@astrojs/sitemap": "^3.0.5",
-    "@astrolib/analytics": "^0.5.0",
     "@astrolib/seo": "^1.0.0-beta.5",
     "@fontsource-variable/inter": "^5.0.16",
+    "@fontsource-variable/plus-jakarta-sans": "^5.0.19",
     "astro": "^4.2.6",
     "astro-icon": "^1.0.3",
-    "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
-    "typescript-esbuild": "^0.3.6",
-    "unpic": "^3.16.0"
+    "typescript-esbuild": "^0.3.6"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^2.1.0",
-    "@astrojs/partytown": "^2.0.4",
     "@astrojs/tailwind": "5.1.0",
-    "@iconify-json/flat-color-icons": "^1.1.10",
     "@iconify-json/tabler": "^1.1.104",
     "@tailwindcss/typography": "^0.5.10",
     "@types/lodash.merge": "^4.6.9",
@@ -40,10 +34,8 @@
     "eslint-plugin-astro": "^0.31.3",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "js-yaml": "^4.1.0",
-    "mdast-util-to-string": "^4.0.0",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0",
-    "reading-time": "^1.5.0",
     "sharp": "0.33.2",
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",

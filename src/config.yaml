@@ -11,7 +11,7 @@ metadata:
   title:
     default: Rogério Pontes
     template: '%s — Rogério Pontes'
-  description: "Security Engineer and Privacy Researcher"
+  description: "Security Engineering Manager with a Ph.D. in Computer Science, 9 peer-reviewed publications, and a track record of building security teams and cloud infrastructure at scale."
   robots:
     index: true
     follow: true
@@ -23,45 +23,13 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@rogerio_acp'
+    site: '@rogerio_acp'
     cardType: summary_large_image
 
 i18n:
   language: en
   textDirection: ltr
-
-apps:
-  blog:
-    isEnabled: true
-    postsPerPage: 6
-
-    post:
-      isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
-
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
-
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
-
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
-
-    isRelatedPostsEnabled: true
-    relatedPostsCount: 4
 
 analytics:
   vendors:
@@ -76,15 +44,15 @@ ui:
       fonts:
         sans: InterVariable
         serif: var(--ph-font-sans)
-        heading: var(--ph-font-sans)
+        heading: Plus Jakarta Sans Variable
       colors:
-        default: rgb(16 16 16)
-        heading: rgb(0 0 0)
-        muted: rgb(40 40 40)
+        default: rgb(51 65 85)
+        heading: rgb(15 23 42)
+        muted: rgb(100 116 139)
         bgPage: rgb(255 255 255)
-        primary: rgb(0 124 220)
-        secondary: rgb(30 58 138)
-        accent: rgb(109 40 217)
+        primary: rgb(79 70 229)
+        secondary: rgb(67 56 202)
+        accent: rgb(16 185 129)
         info: rgb(119 182 234)
         success: rgb(54 211 153)
         warning: rgb(251 189 35)
@@ -94,13 +62,13 @@ ui:
     dark:
       fonts: {}
       colors:
-        default: rgb(247, 248, 248)
-        heading: rgb(247, 248, 248)
-        muted: rgb(200, 188, 208)
-        bgPage: rgb(3 6 32)
-        primary: rgb(29 78 216)
-        secondary: rgb(30 58 138)
-        accent: rgb(135 77 2267)
+        default: rgb(203 213 225)
+        heading: rgb(241 245 249)
+        muted: rgb(148 163 184)
+        bgPage: rgb(15 23 42)
+        primary: rgb(129 140 248)
+        secondary: rgb(99 102 241)
+        accent: rgb(52 211 153)
         info: rgb(58 191 248)
         success: rgb(54 211 153)
         warning: rgb(251 189 35)

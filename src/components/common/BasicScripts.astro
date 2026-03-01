@@ -41,29 +41,6 @@ import { UI } from '~/utils/config';
   }
 
   const onLoad = function () {
-    let lastKnownScrollPosition = window.scrollY;
-    let ticking = true;
-
-    attachEvent('#header nav', 'click', function () {
-      document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
-      document.body.classList.remove('overflow-hidden');
-      document.getElementById('header')?.classList.remove('h-screen');
-      document.getElementById('header')?.classList.remove('expanded');
-      document.getElementById('header')?.classList.remove('bg-page');
-      document.querySelector('#header nav')?.classList.add('hidden');
-      document.querySelector('#header > div > div:last-child')?.classList.add('hidden');
-    });
-
-    attachEvent('[data-aw-toggle-menu]', 'click', function (_, elem) {
-      elem.classList.toggle('expanded');
-      document.body.classList.toggle('overflow-hidden');
-      document.getElementById('header')?.classList.toggle('h-screen');
-      document.getElementById('header')?.classList.toggle('expanded');
-      document.getElementById('header')?.classList.toggle('bg-page');
-      document.querySelector('#header nav')?.classList.toggle('hidden');
-      document.querySelector('#header > div > div:last-child')?.classList.toggle('hidden');
-    });
-
     attachEvent('[data-aw-toggle-color-scheme]', 'click', function () {
       if (defaultTheme.endsWith(':only')) {
         return;
@@ -71,91 +48,33 @@ import { UI } from '~/utils/config';
       document.documentElement.classList.toggle('dark');
       localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     });
+  };
 
-    attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
-      const network = elem.getAttribute('data-aw-social-share');
-      const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
-      const text = encodeURIComponent(elem.getAttribute('data-aw-text'));
-
-      let href;
-      switch (network) {
-        case 'facebook':
-          href = `https://www.facebook.com/sharer.php?u=${url}`;
-          break;
-        case 'twitter':
-          href = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
-          break;
-        case 'linkedin':
-          href = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`;
-          break;
-        case 'whatsapp':
-          href = `https://wa.me/?text=${text}%20${url}`;
-          break;
-        case 'mail':
-          href = `mailto:?subject=%22${text}%22&body=${text}%20${url}`;
-          break;
-
-        default:
-          return;
-      }
-
-      const newlink = document.createElement('a');
-      newlink.target = '_blank';
-      newlink.href = href;
-      newlink.click();
-    });
-
-    let screenSize = window.matchMedia('(max-width: 767px)');
-    screenSize.addEventListener('change', function () {
-      document.querySelector('[data-aw-toggle-menu]')?.classList.remove('expanded');
-      document.body.classList.remove('overflow-hidden');
-      document.getElementById('header')?.classList.remove('h-screen');
-      document.getElementById('header')?.classList.remove('expanded');
-      document.getElementById('header')?.classList.remove('bg-page');
-      document.querySelector('#header nav')?.classList.add('hidden');
-      document.querySelector('#header > div > div:last-child')?.classList.add('hidden');
-    });
-
-    function appyHeaderStylesOnScroll() {
-      const header = document.querySelector('#header[data-aw-sticky-header]');
-      if (lastKnownScrollPosition > 60 && !header.classList.contains('scroll')) {
-        document.getElementById('header').classList.add('scroll');
-      } else if (lastKnownScrollPosition <= 60 && header.classList.contains('scroll')) {
-        document.getElementById('header').classList.remove('scroll');
-      }
-      ticking = false;
-    }
-    appyHeaderStylesOnScroll();
-
-    attachEvent([document], 'scroll', function () {
-      lastKnownScrollPosition = window.scrollY;
-
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          appyHeaderStylesOnScroll();
+  function initScrollAnimations() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
         });
-        ticking = true;
-      }
+      },
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('[data-animate]').forEach((el) => {
+      observer.observe(el);
     });
-  };
-  const onPageShow = function () {
-    document.documentElement.classList.add('motion-safe:scroll-smooth');
-    const elem = document.querySelector('[data-aw-toggle-menu]');
-    if (elem) {
-      elem.classList.remove('expanded');
-    }
-    document.body.classList.remove('overflow-hidden');
-    document.getElementById('header')?.classList.remove('h-screen');
-    document.getElementById('header')?.classList.remove('expanded');
-    document.querySelector('#header nav')?.classList.add('hidden');
-  };
+  }
 
-  window.onload = onLoad;
-  window.onpageshow = onPageShow;
+  window.onload = function () {
+    onLoad();
+    initScrollAnimations();
+  };
 
   document.addEventListener('astro:after-swap', () => {
     initTheme();
     onLoad();
-    onPageShow();
+    initScrollAnimations();
   });
 </script>
